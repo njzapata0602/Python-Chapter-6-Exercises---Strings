@@ -1,0 +1,39 @@
+Exercise 1:
+#Using 'while' loop
+fruit=raw_input('Enter a string: ')
+index = len(fruit)
+while index > 0:
+    letter = fruit[index-1]
+    print letter
+    index = index - 1
+
+Exercise 2:
+fruit[:] means don't print 
+
+Exercise 3:
+def count(string, letter):
+    x = 0
+    for i in string:
+        if i == letter:
+            x += 1
+    print "The letter "+letter+" appears " +str(x)+" times in the string: "+string
+    
+count("This is a test", "t")
+
+Exercide 4:
+word = 'banana'
+word.count('a',0,)
+
+Exercise 5:
+string = "X-DSPAM-Confidence: 0.8475"
+start_index = string.find(':')
+num = string[start_index+1:].strip()
+print float(num)
+
+Exercise 6:
+string = 'python'
+
+print string.capitalize()
+print string.islower()
+print string.replace("o", "a")
+print string.upper()
